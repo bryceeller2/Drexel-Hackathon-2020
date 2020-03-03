@@ -1,0 +1,130 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- main script -->
+<script src = "js/main.js" > </script>
+<href="data/combined_multi_bot_and_genuine_150.0k_split.csv"></href>
+
+<title>Tinder With Blockchain</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<style>
+body {
+  font-family: 'Roboto'; font-size: 22px;
+}
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #ffb566;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ffdab3;
+  color: black;
+}
+
+.active {
+  color: white;
+  height: -webkit-fill-available;
+  padding: 3;
+}
+
+.logo{
+  height: 10%;
+}
+
+img {
+    image-orientation: from-image;
+}
+
+</style>
+</head>
+<body>
+<!-- Top Navigation Menu -->
+<div  class="topnav" style="font-family: 'Roboto'">
+  <a href="./index.html"> <img src="img/logo.png" class="active logo"></img> </a>
+  <div id="myLinks">
+    <a href="./profile.html">My Profile</a>
+    <a href="./about.html">About Us</a>
+    <a href="./contact.html">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="Menu_Nav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Tinder With Blockchain</h3>
+  <p id="touch_neel">Touch Neel.</p>
+
+  <img style="height: 40%; width:auto" src="img/neel.png" id="picture"></img>
+
+<!--  
+  <p>Enter the Hashtag you wish to analyze below:</p>
+  <p>#<input id="user_hashtag" type="text" placeholder="Hashtag to Analyze"> </p>
+  <p> <button id="hashtag_btn" onclick="">Detect Bots!</button>
+  <p id="report_display"></p>
+-->
+</div>
+
+<!-- unhide this in devtools to see the debugging panel -->
+<div hidden id="debugging">
+  <div id="tweetData">
+    <h1>Debugging Panel </h1>
+    <h2>Tweet Data</h2>
+    <h2>User</h2>
+    <p id="user"></p>
+    <h2>Tweet Body </h2>
+    <p id="tweetbody"></p>
+    <h2>Tweet URL </h2>
+    <p id="tweeturl"></p>
+    <h2>Tweet</h2>
+    <p id="tweetembed"></p>
+    <h2>Twitter Connection Info </h2>
+    <h3>Connected?</h3>
+    <p id="tweet_connection_status"></p>
+  </div>
+  <!--
+  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw\">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw\">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw\">May 5, 2014</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+-->
+</div>
+
+<script>
+function Menu_Nav() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
